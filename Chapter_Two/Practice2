@@ -1,0 +1,21 @@
+# type and type casting
+
+# Type
+a = 5
+t = type(a)
+print(t)
+b = "talha"
+print(type(b))
+
+# Type casting
+b = float(a)
+print(b)
+print(type(b))
+b = str(a)
+print(b)
+print(type(b))
+x = 10.7
+y = int(x)
+print(y)
+p = int(b)
+print(p) # print length of sting as an integer
