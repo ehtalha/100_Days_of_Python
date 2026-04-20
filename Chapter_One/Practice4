@@ -1,0 +1,20 @@
+# write a Python program to print the contents of a directory using the os module
+
+import os
+
+# Specify the directory path
+path = "/New folder"  
+
+try:
+    # Get the list of entries in the directory
+    entries = os.listdir(path)
+
+    # Print each entry
+    for entry in entries:
+        print(entry)
+except FileNotFoundError:
+    print(f"The directory '{path}' does not exist.")
+except NotADirectoryError:
+    print(f"The path '{path}' is not a directory.")
+except PermissionError:
+    print(f"Permission denied to access '{path}'.")
