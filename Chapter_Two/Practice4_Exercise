@@ -1,0 +1,32 @@
+# Write a python program to ass two number
+a = int(input("Enter an integer 1: " )) # sting to int
+b = int(input("Enter an integer 2: " ))
+print("First Number  is :", a)
+print("Second Number is :",b)
+sum = (a+b)
+print(sum)
+
+# Write a python program to find the reminder  when the number is divided by Z
+a = int(input("Enter an Number: " )) # sting to int
+z = int(input("Enter an value of Z : " ))
+
+reminder = a%z
+print("Remider is : ",reminder)
+
+# Use a comparisom operator to identify the number of a is grater then b or not? where a = 10 , b = 30
+a = 10
+b = 30
+c = a>b
+print(c)
+
+# Write a python program to find the average of two number given by user
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+avg = (a+b)/2
+print("Average is : ",avg)
+
+
+# Write a python program to find the square of a number enterd by user
+a = int(input("Enter a number : "))
+square = a**2
+print( "square of ",a ,"is : ",square)
