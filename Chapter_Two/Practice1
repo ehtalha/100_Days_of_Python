@@ -1,0 +1,13 @@
+# Chapter two all about varable and data type
+# Variable 
+a = 5   # a is a variable
+b = 7   # b is a variable
+print(a+b)
+
+# Data type
+
+a = 5       # a is  integer type variable
+b = 5.6     # b is floating type variable
+c = "Talha" # c is string
+d = True    # d id boolean type
+e = None    # e is None type variable
