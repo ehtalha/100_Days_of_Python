@@ -1,0 +1,27 @@
+| Escape   | Meaning                                |
+| -------- | -------------------------------------- |
+| `\n`     | New line (moves to next line)          |
+| `\t`     | Tab space                              |
+| `\\`     | Backslash (`\`)                        |
+| `\'`     | Single quote                           |
+| `\"`     | Double quote                           |
+| `\r`     | Carriage return (moves to beginning)   |
+| `\b`     | Backspace (removes previous character) |
+| `\uXXXX` | Unicode character                      |
+
+
+
+# take a name as a input from user and wish him afternoon
+name = input("Enter your name :")
+print(f"good afternoon ,{name}")
+
+# There is a multiline string , replace name and date
+ex = '''<|Name|>
+you can start from
+<|Date|>'''
+print(ex.replace("<|Name|>","Talha").replace("<|Date|>","03/september"))
+
+# detect double space
+strr = "hello eeee wo  g"
+print(strr.find("  "))
+
