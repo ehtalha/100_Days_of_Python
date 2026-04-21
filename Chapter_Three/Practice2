@@ -1,0 +1,77 @@
+# String
+
+name = "Talha"
+print(name[0:5])
+print(name[1:3])
+print(name[-5:-1])
+
+output :
+Talha
+al
+Talh
+
+### most useful string functions
+
+s = "hello world"
+s.upper()      # 'HELLO WORLD'
+s.lower()      # 'hello world'
+s.title()      # 'Hello World'
+s.capitalize() # 'Hello world'
+
+
+s = "  hello  "
+s.strip()      # 'hello' (both sides)
+s.lstrip()     # 'hello  '
+s.rstrip()     # '  hello'
+
+# 3. Replace Text
+s = "I like Java"
+
+s.replace("Java", "Python")  # 'I like Python'
+
+# 4. Split & Join
+s = "apple,banana,mango"
+
+s.split(",")   # ['apple', 'banana', 'mango']
+
+lst = ['apple', 'banana']
+",".join(lst)  # 'apple,banana'
+
+# 5. Find & Count
+s = "hello world"
+
+s.find("o")    # 4 (first occurrence)
+s.count("o")   # 2
+
+# 6. Check String Type
+s = "Hello123"
+
+s.isalpha()    # False (only letters?)
+s.isdigit()    # False (only numbers?)
+s.isalnum()    # True (letters + numbers)
+s.isspace()    # False
+#  7. Starts / Ends With
+s = "hello world"
+
+s.startswith("hello")  # True
+s.endswith("world")    # True
+#  8. String Formatting
+name = "Talha"
+age = 22
+
+f"My name is {name} and I am {age}"
+# 'My name is Talha and I am 22'
+#  9. Indexing & Slicing
+s = "Python"
+
+s[0]     # 'P'
+s[-1]    # 'n'
+s[0:4]   # 'Pyth'
+#  10. Length of String
+len("hello")   # 5
+# (Very Useful)
+s = "hello world"
+
+s.swapcase()   # 'HELLO WORLD'
+s.center(20)   # center align
+s.zfill(5)     # '00042' (for numbers as string)
