@@ -1,0 +1,41 @@
+# string
+
+print("=== String Practice Program ===\n")
+
+# Get input from user
+name = input("Enter your name: ").strip()
+
+print(f"\nHello, {name}!\n")
+print("Let's practice some string operations:\n")
+
+# 1. Basic operations
+print(f"1. Your name in uppercase: {name.upper()}")
+print(f"2. Your name in lowercase: {name.lower()}")
+print(f"3. Your name reversed: {name[::-1]}")
+print(f"4. Length of your name: {len(name)} characters")
+
+# 5. Count vowels
+vowels = "aeiouAEIOU"
+vowel_count = sum(1 for char in name if char in vowels)
+print(f"5. Number of vowels in your name: {vowel_count}")
+
+# 6. Check if name contains only letters
+print(f"6. Contains only letters: {name.isalpha()}")
+
+# 7. Replace letters (fun part)
+if len(name) > 3:
+    modified = name.replace(name[1], '*').replace(name[2], '#')
+    print(f"7. Modified name (some letters replaced): {modified}")
+
+print("\n" + "="*40)
+
+# Extra practice: Ask user for a sentence
+sentence = input("\nEnter a sentence: ").strip()
+
+print("\nString operations on your sentence:")
+print(f"- Number of words: {len(sentence.split())}")
+print(f"- First word: {sentence.split()[0] if sentence else 'None'}")
+print(f"- Sentence in title case: {sentence.title()}")
+print(f"- Does it end with a question? {sentence.endswith('?')}")
+
+print("\nPractice complete! Great job! 🎉")
