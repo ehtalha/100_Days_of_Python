@@ -1,0 +1,38 @@
+# practice string function
+
+# Reversing a String: Write a function that takes a string and returns it reversed.
+def reverse_string(s):
+    return s[::-1]
+# Example
+print(reverse_string("hello"))  # Output: "olleh"
+
+# Word Count: Write a function that counts how many words are in a given sentence. Assume words are separated by single spaces.
+def count_words(s):
+    words = s.split()
+    return len(words)
+
+# Example
+print(count_words("Python is fun to learn"))  # Output: 5
+
+# Title Case Conversion: Given a string, write a function that converts it to "Title Case" (where the first letter of every word is capitalized).
+def to_title_case(s):
+    return s.title()
+
+# Example
+print(to_title_case("hello world, welcome to python"))  # Output: "Hello World, Welcome To Python"
+
+# Character Frequency: Write a function that takes a string and returns the number of times a specific character appears in it (case-insensitive).
+def count_char(s, char):
+    return s.lower().count(char.lower())
+
+# Example
+print(count_char("Hello World", "l"))  # Output: 3
+
+# String Stripping: Write a function that takes a string and removes all leading and trailing whitespace, then checks if the remaining string is a palindrome.
+def is_clean_palindrome(s):
+    clean_s = s.strip().lower()
+    return clean_s == clean_s[::-1]
+
+# Example
+print(is_clean_palindrome("  radar  "))  # Output: True
+print(is_clean_palindrome("  hello  "))  # Output: False
