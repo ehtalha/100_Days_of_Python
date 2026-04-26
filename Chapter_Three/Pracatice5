@@ -1,0 +1,26 @@
+# Convert "hello world" to uppercase, then convert "PYTHON IS FUN" to lowercase.
+
+# Hint: str.upper(), str.lower()
+s1 = "hello world"
+print(s1.upper())        # "HELLO WORLD"
+
+s2 = "PYTHON IS FUN"
+print(s2.lower())        # "python is fun"
+
+# Remove leading and trailing spaces from " hello ". Also remove only the left spaces, then only the right spaces.
+s = "   hello   "
+print(s.strip())         # "hello"
+print(s.lstrip())        # "hello   "
+print(s.rstrip())        # "   hello"
+
+# In the string "I love cats and cats are cute", replace every occurrence of "cats" with "dogs".
+s = "I love cats and cats are cute"
+print(s.replace("cats", "dogs"))
+# "I love dogs and dogs are cute"
+
+# Split "apple,banana,cherry,mango" by comma into a list, then join the list back using " | " as separator.
+s = "apple,banana,cherry,mango"
+fruits = s.split(",")
+print(fruits)            # ['apple', 'banana', 'cherry', 'mango']
+result = " | ".join(fruits)
+print(result)            # "apple | banana | cherry | mango"
