@@ -1,0 +1,85 @@
+# List practice
+# Python List Functions Cheat Sheet
+
+#list
+lst = [3, 1, 2, 2]
+print(lst)
+# append() -> Adds element at the end
+lst.append(4)
+print(lst) # [3, 1, 2, 2, 4]
+
+# extend() -> Adds multiple elements
+lst.extend([5, 6])
+print(lst) # [3, 1, 2, 2, 4, 5, 6]
+
+# insert() -> Inserts element at specific index
+lst.insert(1, 10)
+print(lst) # [3, 10, 1, 2, 2, 4, 5, 6]
+
+# remove() -> Removes first occurrence of value
+lst.remove(2)  # removes first 2
+print(lst) # [3,10,1, 2, 4, 5, 6]
+
+# pop() -> Removes and returns element (default last)
+last_item = lst.pop()     # removes last element
+print(lst) # [3, 10, 1, 2, 4, 5]
+first_item = lst.pop(0)   # removes element at index 0
+print(lst) # [10, 1, 2, 4, 5]
+
+# count() -> Counts occurrences of a value
+count_2 = lst.count(2)
+print(count_2) # 1
+
+# index() -> Finds index of first occurrence
+index_10 = lst.index(10)
+print(index_10) # 0
+
+# sort() -> Sorts the list (in-place)
+lst.sort()  # ascending order
+print(lst) # [1, 2, 4, 5, 10]
+
+# sort(reverse=True) -> Sorts in descending order
+lst.sort(reverse=True)
+print(lst) # [10, 5, 4, 2, 1]
+
+# reverse() -> Reverses the list
+lst.reverse()
+print(lst) # [1, 2, 4, 5, 10]
+
+# copy() -> Creates a shallow copy
+new_lst = lst.copy()
+print(new_lst) # [1, 2, 4, 5, 10]
+
+# clear() -> Removes all elements
+lst.clear()
+print(lst) # []
+
+# -------- Built-in Functions --------
+
+numbers = [1, 5, 3, 9]
+
+# len() -> Number of elements
+length = len(numbers)
+
+# max() -> Largest value
+maximum = max(numbers)
+
+# min() -> Smallest value
+minimum = min(numbers)
+
+# sum() -> Sum of all elements
+total = sum(numbers)
+
+# sorted() -> Returns a new sorted list (original unchanged)
+sorted_list = sorted(numbers)
+
+# Print results (optional)
+print("List:", lst) # List: []
+print("New List:", new_lst) #  New List: [1, 2, 4, 5, 10]
+print("Length:", length) # Length: 4
+print("Max:", maximum) # Max: 9
+print("Min:", minimum) # Min: 1
+print("Sum:", total) # Sum: 18
+print("Sorted:", sorted_list) # Sorted: [1, 3, 5, 9]
+
+
