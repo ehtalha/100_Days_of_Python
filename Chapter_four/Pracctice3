@@ -1,0 +1,54 @@
+# Python Tuple Functions / Methods
+
+# Create a tuple
+tup = (1, 2, 3, 2, 4, 2)
+
+# count() -> Counts how many times a value appears
+count_2 = tup.count(2)
+print("Count of 2:", count_2)  
+# Output: Count of 2: 3
+
+
+# index() -> Returns index of first occurrence of a value
+index_3 = tup.index(3)
+print("Index of 3:", index_3)  
+# Output: Index of 3: 2
+
+
+# -------- Built-in Functions --------
+
+# len() -> Returns number of elements
+length = len(tup)
+print("Length:", length)  
+# Output: Length: 6
+
+
+# max() -> Returns largest value
+maximum = max(tup)
+print("Max value:", maximum)  
+# Output: Max value: 4
+
+
+# min() -> Returns smallest value
+minimum = min(tup)
+print("Min value:", minimum)  
+# Output: Min value: 1
+
+
+# sum() -> Returns sum of elements
+total = sum(tup)
+print("Sum:", total)  
+# Output: Sum: 14
+
+
+# sorted() -> Returns a sorted list (not tuple)
+sorted_tup = sorted(tup)
+print("Sorted tuple (as list):", sorted_tup)  
+# Output: Sorted tuple (as list): [1, 2, 2, 2, 3, 4]
+
+
+# tuple() -> Converts iterable to tuple
+list_data = [5, 6, 7]
+new_tup = tuple(list_data)
+print("Converted tuple:", new_tup)  
+# Output: Converted tuple: (5, 6, 7)
