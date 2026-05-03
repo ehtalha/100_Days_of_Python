@@ -17,3 +17,6 @@ d_max = data.max()
 normalized = (data - d_min) / (d_max - d_min)
 
 print(f"Normalized Array: \n{normalized}")
+
+# [0.11428571 0.08571429 0.97142857 0.68571429 0.05714286 0.05714286
+#  0.         0.02857143 1.         0.94285714]
